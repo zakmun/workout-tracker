@@ -42,7 +42,7 @@ body{
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.374), rgba(0, 0, 0, 0.982)), url("https://i.pinimg.com/originals/9e/a3/5b/9ea35b3ee445ca2aa820920dc2600a6d.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.826)), url("https://i.pinimg.com/originals/9e/a3/5b/9ea35b3ee445ca2aa820920dc2600a6d.jpg");
     height: 1000px;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,6 +50,7 @@ body{
     position: relative;
 
 }
+
 .hero-text {
     text-align: center;
     position: absolute;
@@ -57,4 +58,29 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+  }
+
+  .hero-text h1 {
+    font-size: 4em;
+  }
+
+  .hero-text p {
+    font-size: 1.5em;
+  }
+
+  button {
+    height: 70px;
+    width: 200px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 1em;
+    font-weight:700;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+  }
+
+  button:hover {
+    background-color: #d56700;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.153);
   }
