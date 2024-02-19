@@ -41,6 +41,11 @@ body{
     color: #fff;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.382), rgba(0, 0, 0, 0.826)), url("https://i.pinimg.com/originals/9e/a3/5b/9ea35b3ee445ca2aa820920dc2600a6d.jpg");
     height: 1000px;
