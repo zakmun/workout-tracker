@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.nav-menu header {
+    margin-right: auto;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin-left: 20px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
