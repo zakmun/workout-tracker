@@ -92,18 +92,18 @@ button:hover {
 
 .workout-container {
    
-    width: 25%;
+    width: 45%;
     text-align: center;
     margin: 200px auto;
     padding: 50px 0;
     background-color: rgb(231, 244, 244);
 }
 
-.excersize {
+.exercise {
     margin-bottom: 30px;
 }
 
-.excersize input{
+.exercise input{
     height: 40px;
     width: 250px;
     border-radius: 5px;
@@ -113,7 +113,7 @@ button:hover {
     padding-left: 10px
 }
 
-.excersize label {
+.exercise label {
     font-weight: bold;
     font-size: 1.2em;
 }
