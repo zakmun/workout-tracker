@@ -11,10 +11,11 @@ const SearchExercises = () => {
 
       // Allowing users to search for name, equipment, bodypart and target thats in the API
       const searchedExercises = exercisesData.filter((exercise) => 
-        exercise.name.toLowerCase().includes(search))
+        exercise.name.toLowerCase().includes(search)
       ||exercise.equipment.toLowerCase().includes(search)
       ||exercise.bodyPart.toLowerCase().includes(search)
       ||exercise.target.toLowerCase().includes(search)
+      )
     }
   }
 
