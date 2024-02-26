@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 
 import BodyPart from './BodyPart';
 
-const HorizontalScrollbar = ({data, BodyPart, setBodyPart}) => {
+const HorizontalScrollbar = ({data, BodyParts, setBodyPart}) => {
   return (
     <div>
         {data.map((item) => (
