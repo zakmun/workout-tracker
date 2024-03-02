@@ -6,7 +6,7 @@ import {exersiseOptions, fetchData} from '../utils/fetchData';
 import ExerciseCard from './ExerciseCard';
 
 const Exercises = ({exercises, setExercises, bodyPart}) => {
-  console.log(exercises)
+  
   return (
     <Box id="exercises"
     sx={{mt: {lg: '110px'}}}
