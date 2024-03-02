@@ -19,14 +19,15 @@ const ExerciseDetail = () => {
       const exerciseDetailData = await fetchData(`${exerciseDbUrl}/exercises/exercise/${id}`, exerciseOptions);
       setExerciseDetail(exerciseDetailData);
     }
-    
+
       fetchExercisesData();
   }, [id]);
 
 
   return (
     <Box>
-
+       <Detail/>
+      <SimilarExercises/>
     </Box>
 
   )
