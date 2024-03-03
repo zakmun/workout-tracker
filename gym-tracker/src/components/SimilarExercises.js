@@ -4,7 +4,7 @@ import { Typography, Box, Stack } from '@mui/material';
 import HorizontalScrollbar from './HorizontalScrollbar';
 import Loader from './Loader';
 
-const SimilarExercises = () => {
+const SimilarExercises = ({targetMuscleExercises, equipmentExercises}) => {
   return (
     <div>SimilarExercises</div>
   )
