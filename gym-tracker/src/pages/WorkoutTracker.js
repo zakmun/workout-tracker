@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Stack } from '@mui/material';
+import Popup from '../components/Popup';
 
 const WorkoutTracker = () => {
   return (
