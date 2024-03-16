@@ -1,8 +1,8 @@
-import React from 'react'
-import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, TextField } from '@mui/material';
+import React, { useState } from 'react';
+import { Button, Dialog, DialogActions, DialogContent, TextField, Select, InputLabel , MenuItem } from '@mui/material';
 
-export default function FormDialog() {
-  const [open, setOpen] = React.useState(false);
+const Popup = () => {
+  const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -24,37 +24,38 @@ export default function FormDialog() {
           component: 'form',
           onSubmit: (event) => {
             event.preventDefault();
-            const formData = new FormData(event.currentTarget);
-            const formJson = Object.fromEntries(formData.entries());
-            const email = formJson.email;
-            console.log(email);
             handleClose();
           },
         }}
       >
-        <DialogTitle>Subscribe</DialogTitle>
-        <DialogContent>
-          <DialogContentText>
-            To subscribe to this website, please enter your email address here. We
-            will send updates occasionally.
-          </DialogContentText>
+        <DialogContent sx={{width: '500px'}}>
           <TextField
             autoFocus
             required
             margin="dense"
             id="name"
-            name="email"
-            label="Email Address"
-            type="email"
+            name="exercise"
+            label="Exercise"
+            type="exercise"
             fullWidth
             variant="standard"
           />
+          <InputLabel sx={{mt: '20px'}}>Sets</InputLabel>
+          <Select sx={{width: '100px'}}>
+            <MenuItem value={1}>1</MenuItem>
+            <MenuItem value={2}>2</MenuItem>
+            <MenuItem value={3}>3</MenuItem>
+            <MenuItem value={4}>4</MenuItem>
+            <MenuItem value={5}>5</MenuItem>
+            {/* Add more MenuItem components for additional options */}
+          </Select>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
-          <Button type="submit">Subscribe</Button>
+          <Button  sx={{ display: 'flex', justifyContent: 'center', width: '500px' }}>Add</Button>
         </DialogActions>
       </Dialog>
     </React.Fragment>
   );
 }
+
+export default Popup
