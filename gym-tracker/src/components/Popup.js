@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Dialog, DialogActions, DialogContent, TextField, Select, InputLabel , MenuItem } from '@mui/material';
+import { Button, Dialog, DialogActions, DialogContent, TextField, Select, InputLabel , MenuItem, Slider } from '@mui/material';
 
 const Popup = () => {
   const [open, setOpen] = useState(false);
@@ -47,8 +47,8 @@ const Popup = () => {
             <MenuItem value={3}>3</MenuItem>
             <MenuItem value={4}>4</MenuItem>
             <MenuItem value={5}>5</MenuItem>
-            {/* Add more MenuItem components for additional options */}
           </Select>
+
         </DialogContent>
         <DialogActions>
           <Button  sx={{ display: 'flex', justifyContent: 'center', width: '500px' }}>Add</Button>
